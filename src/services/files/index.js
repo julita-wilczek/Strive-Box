@@ -10,7 +10,8 @@ filesRouter.get("/", async (req, res, next) => {
         const files = await readFiles()
         files.forEach(file => {
             const fileData = {name: file,
-            url: `http://localhost:3001/files/${file}`, size: "00"}
+            url: `http://localhost:3001/files/${file}`, size: "00", 
+            downloadURL: `http://localhost:5001/files/${file}`}
             filesFound.push(fileData)})
         res.send(filesFound)
     } catch(error){

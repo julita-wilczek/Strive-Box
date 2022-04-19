@@ -14,6 +14,6 @@ Express is configured to use the public folder to serve static files
 - form validation
 
 
-### `npm ruv dev`
+### `npm run dev`
 
 Runs the server in the development mode.
